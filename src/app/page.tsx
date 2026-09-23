@@ -6,6 +6,8 @@ import Hero from '@/components/Hero';
 import TrustLogos from '@/components/TrustLogos';
 import WhatIsChecklist from '@/components/WhatIsChecklist';
 import DetailedChecklist from '@/components/DetailedChecklist';
+import FeaturesGrid from '@/components/FeaturesGrid';
+import HowItWorks from '@/components/HowItWorks';
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -36,6 +38,12 @@ export default function Home() {
 
         {/* Detailed Interactive Checklist Table */}
         <DetailedChecklist onOpenChecklistModal={handleOpenModal} />
+
+        {/* Features / Benefits Grid */}
+        <FeaturesGrid />
+
+        {/* How It Works 3-Step Process */}
+        <HowItWorks />
       </main>
     </div>
   );
