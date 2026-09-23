@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import TrustLogos from '@/components/TrustLogos';
+import WhatIsChecklist from '@/components/WhatIsChecklist';
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -24,6 +26,12 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section with Interactive Card */}
         <Hero onOpenChecklistModal={handleOpenModal} />
+
+        {/* Social Proof Industry Logos */}
+        <TrustLogos />
+
+        {/* What is a Forklift Inspection Checklist Section */}
+        <WhatIsChecklist />
       </main>
     </div>
   );
