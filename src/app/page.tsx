@@ -11,7 +11,15 @@ import HowItWorks from '@/components/HowItWorks';
 import IndustryCards from '@/components/IndustryCards';
 import FaqAccordion from '@/components/FaqAccordion';
 import CtaBanner from '@/components/CtaBanner';
+import Footer from '@/components/Footer';
+import ChecklistModal from '@/components/ChecklistModal';
 
+/**
+ * Root Landing Page for InspectPro Forklift Inspection Checklist
+ * 
+ * Recreates the complete desktop and mobile reference design with
+ * full responsiveness, modular components, and rich interactivity.
+ */
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -24,39 +32,45 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-      {/* Navigation Bar */}
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-blue-600 selection:text-white">
+      {/* 1. Header Navigation Bar */}
       <Navbar onOpenChecklistModal={handleOpenModal} />
 
       {/* Main Content Sections */}
       <main className="flex-1">
-        {/* Hero Section with Interactive Card */}
+        {/* 2. Hero Section with Interactive Checklist Preview */}
         <Hero onOpenChecklistModal={handleOpenModal} />
 
-        {/* Social Proof Industry Logos */}
+        {/* 3. Social Proof Enterprise Client Logos */}
         <TrustLogos />
 
-        {/* What is a Forklift Inspection Checklist Section */}
+        {/* 4. Educational Overview: What is a Forklift Inspection Checklist? */}
         <WhatIsChecklist />
 
-        {/* Detailed Interactive Checklist Table */}
+        {/* 5. Central Feature: Detailed Interactive Checklist Table */}
         <DetailedChecklist onOpenChecklistModal={handleOpenModal} />
 
-        {/* Features / Benefits Grid */}
+        {/* 6. Benefits Grid: Make Every Forklift Inspection Consistent */}
         <FeaturesGrid />
 
-        {/* How It Works 3-Step Process */}
+        {/* 7. 3-Step Process: How It Works */}
         <HowItWorks />
 
-        {/* Built for Teams Industry Cards */}
+        {/* 8. Built for Teams: Industry Cards */}
         <IndustryCards />
 
-        {/* Frequently Asked Questions */}
+        {/* 9. Frequently Asked Questions (Accordion) */}
         <FaqAccordion />
 
-        {/* High-Impact CTA Banner */}
+        {/* 10. High-Impact Call-to-Action Banner */}
         <CtaBanner onOpenChecklistModal={handleOpenModal} />
       </main>
+
+      {/* 11. Multi-Column Responsive Footer */}
+      <Footer onOpenChecklistModal={handleOpenModal} />
+
+      {/* 12. Interactive Checklist Download & Print Dialog */}
+      <ChecklistModal isOpen={modalOpen} onClose={handleCloseModal} />
     </div>
   );
 }
