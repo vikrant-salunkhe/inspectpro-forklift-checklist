@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import TrustLogos from '@/components/TrustLogos';
 import WhatIsChecklist from '@/components/WhatIsChecklist';
+import DetailedChecklist from '@/components/DetailedChecklist';
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -32,6 +33,9 @@ export default function Home() {
 
         {/* What is a Forklift Inspection Checklist Section */}
         <WhatIsChecklist />
+
+        {/* Detailed Interactive Checklist Table */}
+        <DetailedChecklist onOpenChecklistModal={handleOpenModal} />
       </main>
     </div>
   );
