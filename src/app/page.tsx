@@ -8,6 +8,9 @@ import WhatIsChecklist from '@/components/WhatIsChecklist';
 import DetailedChecklist from '@/components/DetailedChecklist';
 import FeaturesGrid from '@/components/FeaturesGrid';
 import HowItWorks from '@/components/HowItWorks';
+import IndustryCards from '@/components/IndustryCards';
+import FaqAccordion from '@/components/FaqAccordion';
+import CtaBanner from '@/components/CtaBanner';
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -44,6 +47,15 @@ export default function Home() {
 
         {/* How It Works 3-Step Process */}
         <HowItWorks />
+
+        {/* Built for Teams Industry Cards */}
+        <IndustryCards />
+
+        {/* Frequently Asked Questions */}
+        <FaqAccordion />
+
+        {/* High-Impact CTA Banner */}
+        <CtaBanner onOpenChecklistModal={handleOpenModal} />
       </main>
     </div>
   );
