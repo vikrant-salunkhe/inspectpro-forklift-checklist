@@ -133,35 +133,30 @@ inspectpro-forklift-checklist/
 
 ## 📸 Application Preview & Visual Demos
 
-Below are demonstration screenshots of the application rendered across desktop and mobile viewports:
+Below are some demonstration screenshots of the application rendered across desktop and mobile viewports:
 
 ### 🖥️ Desktop Views
 
 #### 1. Hero Section & Live Checklist Preview
-The desktop hero displays the primary headline, dual call-to-action buttons, and the interactive live preview card with real-time completion tracking and status badges.
-
-![Desktop Hero View](docs/screenshots/desktop-hero.png)
-
-#### 2. Social Proof & Educational Overview Section
-Showcases enterprise trust logos and the regulatory mandate breakdown detailing OSHA (29 CFR 1910.178) compliance guidelines alongside structured safety checklist highlights.
 
 ![Desktop Overview Section](docs/screenshots/desktop-overview.png)
+
+#### 2. Social Proof & Educational Overview Section
+
+![Desktop Hero View](docs/screenshots/desktop-hero.png)
 
 ---
 
 ### 📱 Mobile Responsive Views
 
 #### 1. Mobile Hero & Navigation
-The layout dynamically adapts to compact screens with an accessible hamburger navigation bar, full-width stacked CTA buttons, and an optimized checklist preview card tailored for touch interaction.
-
-<p align="center">
-  <img src="docs/screenshots/mobile-hero.png" alt="Mobile Hero View" width="380" />
-</p>
-
-#### 2. Mobile Overview & Trust Logos
-Maintains clean typographic hierarchy and comfortable touch targets on mobile viewports, stacking partner logos and organizing key compliance mandates without horizontal overflow.
 
 <p align="center">
   <img src="docs/screenshots/mobile-overview.png" alt="Mobile Overview Section" width="380" />
 </p>
 
+#### 2. Mobile Overview & Trust Logos
+
+<p align="center">
+  <img src="docs/screenshots/mobile-hero.png" alt="Mobile Hero View" width="380" />
+</p>
