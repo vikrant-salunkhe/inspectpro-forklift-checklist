@@ -1,12 +1,11 @@
 # InspectPro — Forklift Inspection Checklist Landing Page
 
-> A production-grade, pixel-matched recreation of the **InspectPro "Forklift Inspection Checklist"** landing page built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS**.
+> A production-grade, as closely as possible recreation of the **InspectPro "Forklift Inspection Checklist"** landing page built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS**.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.3-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2-blue?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 ---
 
@@ -14,10 +13,10 @@
 
 This repository is submitted as part of the **Next.js Practical Task — Website Development**. 
 
-The goal was to recreate the reference design with high visual fidelity, complete mobile responsiveness, interactive states, clean modular architecture, and self-documenting code that is easy to explain during a technical interview.
+The goal was to recreate the reference design with high visual fidelity, complete mobile responsiveness, interactive states, clean modular architecture, and self-documenting code.
 
 * **GitHub Repository:** [https://github.com/vikrant-salunkhe/inspectpro-forklift-checklist](https://github.com/vikrant-salunkhe/inspectpro-forklift-checklist)
-* **Design Accuracy:** Pixel-matched to desktop and mobile layouts provided in the task brief.
+* **Design Accuracy:** Closely matched to desktop and mobile layouts provided in the task brief.
 * **Interactivity:** Dynamic state updates across checklist preview cards, filterable inspection checkpoints, expandable FAQ accordions, and an accessible modal dialog.
 
 ---
@@ -131,24 +130,3 @@ inspectpro-forklift-checklist/
 * The **Detailed Checklist** features derived summary statistics calculated with `useMemo`, allowing instant recalculation of pass/fail/na metrics with zero unnecessary re-renders.
 
 ---
-
-## 🗣 Technical Interview Talking Points (Cheat Sheet)
-
-When discussing this project during your interview, here are key points you can highlight:
-
-1. **Section-by-Section Problem Solving**:
-   > *"I broke the recreation down into phased milestones, starting with design tokens and scaffolding, then implementing the Hero with its interactive preview card, followed by the complex checklist state, and finishing with accessible accordions, modals, and responsive footer."*
-
-2. **State Management & Performance**:
-   > *"In `DetailedChecklist.tsx`, state is maintained cleanly at the component level with immutable updates. Derived metrics like total checkpoints, pass counts, and progress rates are computed using `useMemo` so that typing into a note field doesn't trigger expensive recalculations."*
-
-3. **Attention to Design Fidelity**:
-   > *"I paid special attention to micro-details from the reference image: the dark navy backdrop accent behind the hero card, the exact 3-pill status buttons (`Pass`, `Fail`, `NA`), the maintenance alert flag tags, and the pre-expanded state of the FAQ matching the mobile mockup."*
-
-4. **Working Effectively with AI**:
-   > *"I used AI as an expert pair programmer to plan the architecture, scaffold boilerplate, and ensure strict TypeScript types, while maintaining full control over code structure, Git commit hygiene, and verification."*
-
----
-
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
