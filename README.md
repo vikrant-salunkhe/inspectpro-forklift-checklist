@@ -152,11 +152,11 @@ Below are some demonstration screenshots of the application rendered across desk
 #### 1. Mobile Hero & Navigation
 
 <p align="center">
-  <img src="docs/screenshots/mobile-overview.png" alt="Mobile Overview Section" width="380" />
+  <img src="docs/screenshots/mobile-hero.png" alt="Mobile Hero View" width="380" />
 </p>
 
 #### 2. Mobile Overview & Trust Logos
 
 <p align="center">
-  <img src="docs/screenshots/mobile-hero.png" alt="Mobile Hero View" width="380" />
+  <img src="docs/screenshots/mobile-overview.png" alt="Mobile Overview Section" width="380" />
 </p>
